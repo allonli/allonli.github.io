@@ -208,20 +208,28 @@
 
 <div class="post-preview">
 
-    <a href="/2015/06/22/scala/Chapter-10-特质/">
+    <a href="/2015/06/22/scala/Chapter-11-operators/">
         <h2 class="post-title">
-            Chapter-10-特质
+            Chapter-11-operators
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            Chapter-10-特质
-特质 trait 接口 interface
+             Chapter-11-operators
+操作符
 
-当做接口使用的特质
-特质的部分功能和java中的接口十分类似。例如：
-1234567trait Logger &#123;    def log(msg: String) //这个是抽象方法，不要写abstract，特质中默认未实现的方法就是抽象的。&#125;class ConsoleLogger extends L......
+ 标识符和操作符
+变量、函数、类等名称统称为标识符。在scala中的标识符，一般不跟关键字冲突，几乎所有的Unicode字符都可以。
+在scala中，很多时候操作符实际上是函数名，所以标识符和操作符这两个概念差别不大。
+常见的赋值操作符
+a 操作符= b
+等价于： a = a 操作符 b
+
+
+ infix（中置）
+a 标识符 b
+如 1 ......
         </div>
     </a>
     
@@ -241,28 +249,19 @@
 
 <div class="post-preview">
 
-    <a href="/2015/06/22/scala/Chapter-11-operators/">
+    <a href="/2015/06/22/scala/Chapter-09-文件和正则表达式/">
         <h2 class="post-title">
-            Chapter-11-operators
+            Chapter-09-文件和正则表达式
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-            Chapter-11-operators
-操作符
+             Chapter-09-文件和正则表达式
+file 文件 正则表达式 Regular expression
 
-标识符和操作符
-变量、函数、类等名称统称为标识符。在scala中的标识符，一般不跟关键字冲突，几乎所有的Unicode字符都可以。
-在scala中，很多时候操作符实际上是函数名，所以标识符和操作符这两个概念差别不大。
-常见的赋值操作符
-a 操作符= b
-等价于： a = a 操作符 b
-
-
-infix（中置）
-a 标识符 b
-如 1 to ......
+ 读取行
+123456import scala.io.Sourceval source = Source.fromFile("myfile.txt", "UTF-8")val iterator = source.getLines //获取Iterator[String]for(l &......
         </div>
     </a>
     
@@ -317,11 +316,11 @@ a 标识符 b
             
         
             
-            <a href="/tags/#数学" title="数学" rel="2">数学</a>
+            <a href="/tags/#书法" title="书法" rel="9">书法</a>
             
         
             
-            <a href="/tags/#书法" title="书法" rel="9">书法</a>
+            <a href="/tags/#数学" title="数学" rel="2">数学</a>
             
         
             
@@ -357,7 +356,7 @@ a 标识符 b
             
             
                 <li>
-                    <a target="_blank" href="https://www.zhihu.com/people/allon">
+                    <a target="_blank" href="https://www.zhihu.com/people/allonli">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa  fa-stack-1x fa-inverse">知</i>
@@ -480,7 +479,7 @@ a 标识符 b
                 
                 
                     <li>
-                        <a target="_blank" href="https://www.zhihu.com/people/allon">
+                        <a target="_blank" href="https://www.zhihu.com/people/allonli">
                             <span class="fa-stack fa-lg">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa  fa-stack-1x fa-inverse">知</i>
