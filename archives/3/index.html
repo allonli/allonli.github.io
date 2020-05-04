@@ -208,6 +208,46 @@
 
 <div class="post-preview">
 
+    <a href="/2017/02/22/深入理解计算机系统/第01章 计算机系统漫游/">
+        <h2 class="post-title">
+            第01章 计算机系统漫游
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            #第01章 计算机系统漫游
+Tags: 深入理解计算机系统
+[TOC]
+
+ 第一章
+
+
+
+
+预编译阶段 - 生成.i文件：  g++ -E hello.c -o hello.i
+编译阶段 - 生成汇编文本.s文件： g++ -S hello.i -o hello.s
+汇编阶段 -  生成.o文件： g++ -c hello.s -o hello.o
+链接阶段 -  生成可执行文件： g++ ......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by allon li on
+            2017-02-22
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#深入理解计算机系统" title="深入理解计算机系统">深入理解计算机系统</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/2017/02/22/深入理解计算机系统/第02章 程序结构和执行/">
         <h2 class="post-title">
             第02章 程序结构和执行
@@ -224,6 +264,63 @@ Tags: 深入理解计算机系统
 总线宽度一般就是一个字长，一个字长的位数，就决定着这个系统的寻址宽度。
 字长为 nnn 那么它的寻址宽度为：000 ~ (2n−1)(2^n - 1)(2​n​​−1)  程序最多访问2n2^n2​n​​个字节。
 little endian(小端）目前android和ios都采用的是little endi......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by allon li on
+            2017-02-22
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#深入理解计算机系统" title="深入理解计算机系统">深入理解计算机系统</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2017/02/22/深入理解计算机系统/第03章 程序的机器级表示/">
+        <h2 class="post-title">
+            第03章 程序的机器级表示
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+             第03章 程序的机器级表示
+Tags: 深入理解计算机系统
+[TOC]
+
+ 程序编码
+汇编或者机器码能操作很多对C语言隐藏的CPU状态：
+
+
+程序计数器（PC，在x86-64中用%rip表示）给出将要执行的下一条指令。
+
+
+
+
+整数寄存器文件的16个位置
+
+
+
+
+条件寄存器（实现if、while等）
+
+
+
+
+一组向量寄存器可以存放一个或多个浮点数值。
+
+
+汇编指令或者机器码特点：
+
+
+x8......
         </div>
     </a>
     
@@ -281,20 +378,19 @@ scala 基础
 
 <div class="post-preview">
 
-    <a href="/2015/06/22/scala/Chapter-04-Map和元组/">
+    <a href="/2015/06/22/scala/Chapter-03-working-with-arrays/">
         <h2 class="post-title">
-            Chapter-04-Map和元组
+            Chapter-03-working-with-arrays
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-             Chapter-04-Map和元组
-Map 映射 元组
+             Chapter-03-working-with-arrays
+数组
 
- 创建Map并取值
-scala中的Map可以非常直观的创建，下面是创建一个不可变的Map
-12345val map = Map("Allon" -&gt; 29, "Jerry" -&gt; 18, "Karen" -&gt; 54 )map("Allon")//返回29map("Allon") = 30//会报错，因为这个Map默......
+ 定长数组
+12345678val nums = new Array[Int](10)//初始化10整数的数组，所有元素初始化为0val strs = new Array[String](10)//10个值为nullval s = Array("Hello", "Allon")//Array对象的apply方法s(0) ......
         </div>
     </a>
     
@@ -347,52 +443,20 @@ scala......
 
 <div class="post-preview">
 
-    <a href="/2015/06/22/scala/Chapter-03-working-with-arrays/">
+    <a href="/2015/06/22/scala/Chapter-04-Map和元组/">
         <h2 class="post-title">
-            Chapter-03-working-with-arrays
+            Chapter-04-Map和元组
         </h2>
         <h3 class="post-subtitle">
             
         </h3>
         <div class="post-content-preview">
-             Chapter-03-working-with-arrays
-数组
+             Chapter-04-Map和元组
+Map 映射 元组
 
- 定长数组
-12345678val nums = new Array[Int](10)//初始化10整数的数组，所有元素初始化为0val strs = new Array[String](10)//10个值为nullval s = Array("Hello", "Allon")//Array对象的apply方法s(0) ......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by allon li on
-            2015-06-22
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#scala" title="scala">scala</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/2015/06/22/scala/Chapter-06-对象/">
-        <h2 class="post-title">
-            Chapter-06-对象
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-             Chapter-06-对象
-对象 object
-
- 单例对象
-scala中没有静态方法和字段。只要的功效可以用object语法来实现。(object定义其实就是具体某个类的单例)
-123456789object Accounts &#123;    private var lastNumber = 0    def newUniqueNumber() = &#123; lastNumber......
+ 创建Map并取值
+scala中的Map可以非常直观的创建，下面是创建一个不可变的Map
+12345val map = Map("Allon" -&gt; 29, "Jerry" -&gt; 18, "Karen" -&gt; 54 )map("Allon")//返回29map("Allon") = 30//会报错，因为这个Map默......
         </div>
     </a>
     
@@ -450,6 +514,39 @@ scala类中的方法默认为public的
 
 <div class="post-preview">
 
+    <a href="/2015/06/22/scala/Chapter-06-对象/">
+        <h2 class="post-title">
+            Chapter-06-对象
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+             Chapter-06-对象
+对象 object
+
+ 单例对象
+scala中没有静态方法和字段。只要的功效可以用object语法来实现。(object定义其实就是具体某个类的单例)
+123456789object Accounts &#123;    private var lastNumber = 0    def newUniqueNumber() = &#123; lastNumber......
+        </div>
+    </a>
+    
+        <p class="post-meta" style="margin: 10px 0;">
+            Posted by allon li on
+            2015-06-22
+        </p>
+        <div class="tags">
+            
+              <a href="/tags/#scala" title="scala">scala</a>
+            
+        </div>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
     <a href="/2015/06/22/scala/Chapter-07-包和引入/">
         <h2 class="post-title">
             Chapter-07-包和引入
@@ -464,73 +561,6 @@ scala类中的方法默认为public的
  包
 scala中的包和C++的命名空间和java中的包概念是相同的，只不过它和目录没有直接关系，是一个虚拟的关系，在代码中定义。
 1234567package com &#123;  package horstmann &#123;    package  impatient &#123;      class E......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by allon li on
-            2015-06-22
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#scala" title="scala">scala</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/2015/06/22/scala/Chapter-08-继承/">
-        <h2 class="post-title">
-            Chapter-08-继承
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-             Chapter-08-继承
-extends 继承
-
- 继承类
-123class Employee extends Person &#123;    var salary = 0.0&#125;
-和java不同的是，java中的final是不可变的。而scala中的final var是可以修改的，只是不能被继承。final val才相当于java的final。
-123456789class ......
-        </div>
-    </a>
-    
-        <p class="post-meta" style="margin: 10px 0;">
-            Posted by allon li on
-            2015-06-22
-        </p>
-        <div class="tags">
-            
-              <a href="/tags/#scala" title="scala">scala</a>
-            
-        </div>
-    
-
-</div>
-<hr>
-
-<div class="post-preview">
-
-    <a href="/2015/06/22/scala/Chapter-10-特质/">
-        <h2 class="post-title">
-            Chapter-10-特质
-        </h2>
-        <h3 class="post-subtitle">
-            
-        </h3>
-        <div class="post-content-preview">
-             Chapter-10-特质
-特质 trait 接口 interface
-
- 当做接口使用的特质
-特质的部分功能和java中的接口十分类似。例如：
-1234567trait Logger &#123;    def log(msg: String) //这个是抽象方法，不要写abstract，特质中默认未实现的方法就是抽象的。&#125;class ConsoleLogger extends......
         </div>
     </a>
     
@@ -597,11 +627,11 @@ extends 继承
             
         
             
-            <a href="/tags/#深入理解计算机系统" title="深入理解计算机系统" rel="3">深入理解计算机系统</a>
+            <a href="/tags/#資治通鑑" title="資治通鑑" rel="9">資治通鑑</a>
             
         
             
-            <a href="/tags/#資治通鑑" title="資治通鑑" rel="7">資治通鑑</a>
+            <a href="/tags/#深入理解计算机系统" title="深入理解计算机系统" rel="3">深入理解计算机系统</a>
             
         
     </div>
@@ -676,7 +706,11 @@ extends 继承
     <ul>
       
         <li>
-          <a href="/2019/07/15/书法/孙过庭-书谱/">孙过庭-书谱</a>
+          <a href="/2020/05/04/資治通鑑/资治通鉴小结119-134卷-宋纪的副本/">资治通鉴小结119-134卷齐纪</a>
+        </li>
+      
+        <li>
+          <a href="/2020/05/04/資治通鑑/资治通鉴小结135-144卷-齐纪/">资治通鉴小结119-134卷齐纪</a>
         </li>
       
         <li>
@@ -684,15 +718,11 @@ extends 继承
         </li>
       
         <li>
+          <a href="/2019/07/15/书法/孙过庭-书谱/">孙过庭-书谱</a>
+        </li>
+      
+        <li>
           <a href="/2019/07/15/书法/虞世南-笔髓论/">虞世南-笔髓论</a>
-        </li>
-      
-        <li>
-          <a href="/2019/07/15/书法/韩方明-授笔要说/">韩方明-授笔要说</a>
-        </li>
-      
-        <li>
-          <a href="/2019/02/13/資治通鑑/资治通鉴小结119-134卷-宋纪/">资治通鉴小结119-134卷宋纪</a>
         </li>
       
     </ul>
@@ -724,7 +754,7 @@ extends 继承
         
     <h5>文章</h5>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">11</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">七月 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">三月 2018</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">十二月 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">十一月 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">11</span></li></ul>
     </div>
 
 
@@ -789,7 +819,7 @@ extends 继承
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; allon li 2019 
+                    Copyright &copy; allon li 2020 
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a> 
                     <span style="display: inline-block; margin: 0 5px;">
